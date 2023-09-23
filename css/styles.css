@@ -344,7 +344,7 @@ main {
   font-size: 12px;
   line-height: 1.166;
   letter-spacing: 0.01em;
-  color: var(--color-lightslate)
+  color: var(--color-lightslate);
 }
 
 .form-input {
@@ -364,6 +364,7 @@ main {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 .form-input-icon {
   position: absolute;
   transform: translateY(-50%);
@@ -371,7 +372,8 @@ main {
   left: 16px;
   width: 18px;
   height: 24px;
-  fill: var(--color-navyblue) transition-property: fill;
+  fill: var(--color-navyblue);
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
