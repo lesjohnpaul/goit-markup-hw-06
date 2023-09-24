@@ -417,7 +417,6 @@ main {
   align-items: center;
   justify-content: flex-start;
   width: 360px;
-  height: 16px;
   gap: 8px;
   margin-bottom: 24px;
 }
@@ -426,16 +425,6 @@ main {
   appearance: none;
   position: absolute;
 
-}
-
-.checkbox:checked+.checkbox-icon {
-  background-size: contain;
-  font: var(--color-white);
-  fill: var(--color-white);
-  border-radius: 2px;
-  border: 1px solid var(--color-iris, rgba(46, 47, 66, 0.40));
-  background-color: var(--color-iris);
-  cursor: pointer;
 }
 
 .checkbox-icon {
@@ -453,8 +442,6 @@ main {
   border: 1px solid var(--color-iris);
 }
 
-
-
 .check-mark {
   display: block;
   width: 16px;
@@ -462,6 +449,16 @@ main {
   outline: none;
   border-radius: 2px;
   border: 1px solid var(--color-navyblue-modal);
+  cursor: pointer;
+}
+
+.agreement-checkbox:checked+.checkbox-icon {
+  background-size: contain;
+  font: var(--color-white);
+  fill: var(--color-white);
+  border-radius: 2px;
+  border: 1px solid var(--color-iris, rgba(46, 47, 66, 0.40));
+  background-color: var(--color-iris);
   cursor: pointer;
 }
 
@@ -1156,11 +1153,23 @@ figcaption {
   display: flex;
   margin-top: 16px;
   font-size: 14px;
+  outline: none;
   flex-shrink: 0;
   background: var(--color-navyblue);
   border-radius: 4px;
   border: 1px solid var(--color-white);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.footer-form-input::placeholder {
+  color: var(--color-white);
+}
+
+.footer-form-input:hover {
+  border: 1px solid var(--color-iris);
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-form-button {
@@ -1182,6 +1191,14 @@ figcaption {
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-button:hover {
+  background: var(--color-ocean);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .footer-form-svgsubscribe {
