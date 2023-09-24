@@ -119,9 +119,6 @@ button {
 }
 
 section {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   padding: 120px 0;
 
 }
@@ -333,10 +330,6 @@ main {
 }
 
 
-.label-text {
-  position: absolute;
-  top: -20px;
-}
 
 .form-label {
   position: relative;
@@ -347,6 +340,11 @@ main {
   color: var(--color-lightslate);
 }
 
+.label-text {
+  position: absolute;
+  top: -20px;
+}
+
 .form-input {
   display: block;
   width: 360px;
@@ -355,15 +353,40 @@ main {
   padding-bottom: 11px;
   padding-left: 38px;
   flex-shrink: 0;
+  outline: none;
   font-size: 14px;
   fill: currentColor;
   border-radius: 4px;
-  border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
+  border: 1px solid var(--color-navyblue, rgba(46, 47, 66, 0.40));
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-label-textarea {
+  position: relative;
+  margin-bottom: 16px;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+  color: var(--color-lightslate);
+}
+
+.form-textarea {
+  width: 360px;
+  height: 120px;
+  flex-shrink: 0;
+  padding-top: 8px;
+  padding-left: 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  border: 1px solid var(--color-navyblue, rgba(46, 47, 66, 0.40));
+  resize: none;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
 
 .form-input-icon {
   position: absolute;
@@ -378,11 +401,22 @@ main {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-input:focus+.form-input-icon,
+.form-input:hover+.form-input-icon {
+  fill: var(--color-iris);
+
+}
+
 .form-input:focus,
 .form-input:hover,
 .form-textarea:hover,
 .form-textarea:focus {
   border: 1px solid var(--color-iris);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  caret-color: var(--color-navyblue);
 }
 
 /* Feature section */
