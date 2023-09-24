@@ -396,6 +396,19 @@
           </li>
         </ul>
       </div>
+      <div class="footer-container footer-form">
+        <form name="subscribe_form" autocomplete="on" method="">
+          <label class="footer-form_label">
+            Subscribe
+            <input type="email" name="email" placeholder="E-mail" class="footer-form-input" required="">
+          </label>
+          <button type="submit" class="footer-form-button">Subscribe
+            <svg class="footer-form-svgsubscribe">
+              <use href="./images/icons.svg#submit"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
     </div>
   </footer>
   </div>
@@ -432,9 +445,22 @@
         </label>
         <label for="comment_textarea" class="form-label-textarea">
           <span class="label-text">Comment</span>
-          <textarea name="comment_textarea" class="form-textarea" placeholder="Text Input" required></textarea>
+          <textarea name="comment_textarea" class="form-textarea" placeholder="Text input" required></textarea>
         </label>
-
+        <label class="form-agreement-box" for="agreement">
+          <input type="checkbox" value="agree" name="agreement" class="agreement-checkbox" required="">
+          <span class="checkbox-icon">
+            <svg class="check-mark">
+              <use href="./images/icons.svg#check-mark"></use>
+            </svg>
+          </span>
+          <span class="form-agreement-text">
+            I accept the terms and conditions of the &nbsp;<a href="#" class="form-agreement-link">Privacy Policy</a>
+          </span>
+        </label>
+        <div class="form-button-container">
+          <button type="submit" class="submit-button">Send</button>
+        </div>
       </form>
     </div>
   </div>
