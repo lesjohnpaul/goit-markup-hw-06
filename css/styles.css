@@ -807,7 +807,7 @@ main {
   left: 50%;
   min-width: 408px;
   min-height: 584px;
-  background-color: var(--dairy, #fcfcfc);
+  background-color: var(--color-dairy, #fcfcfc);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   border-radius: 4px;
@@ -824,16 +824,16 @@ main {
 
 .modal-close {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 24px;
+  right: 24px;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   background-color: var(--cornflower, #e7e9fc);
-  color: var(--navyblue);
+  color: var(--color-navyblue);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   cursor: pointer;
